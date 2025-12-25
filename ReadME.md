@@ -705,7 +705,7 @@ def decrypt(self, encrypted_message: str) -> str
 
 ### Production Recommendations
 
-⚠️ **This is a demonstration/educational project. For production use:**
+**This is a demonstration/educational project. For production use:**
 
 1. **Use unique encryption keys per session** (not shared static key)
 2. **Implement TLS/SSL** for transport layer security
