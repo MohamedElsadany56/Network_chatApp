@@ -4,7 +4,6 @@ import tkinter as tk
 from tkinter import scrolledtext, messagebox, simpledialog
 from datetime import datetime
 from encryption import MessageEncryption
-import netifaces
 import ipaddress
 import hashlib
 from login_dialog import LoginDialog, RegisterDialog
@@ -74,7 +73,7 @@ class ChatClient:
             return local_ip
         
         # Scan common LAN IPs
-        for i in [1, 2, 100, 101, 254]:
+        for i in (2,255):
             test_ip = f"{network_prefix}.{i}"
             if test_ip != local_ip:
                 if self.test_server_connection(test_ip, port, timeout):

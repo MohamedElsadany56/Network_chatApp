@@ -18,7 +18,7 @@ def build_windows_exe():
         "--onefile",
         "--windowed",
         "--name=ChatX_Client",
-        "--icon=NONE",  # Add your icon path here if you have one
+        "--icon=NONE",  
         "client.py"
     ], check=True)
     
@@ -32,7 +32,7 @@ def build_windows_exe():
         "server.py"
     ], check=True)
     
-    print("\n✅ Build complete!")
+    print("\n Build complete!")
     print("Executables are in the 'dist' folder:")
     print("  - ChatX_Client.exe (GUI client)")
     print("  - ChatX_Server.exe (Server)")
